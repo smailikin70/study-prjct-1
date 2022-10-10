@@ -1,3 +1,90 @@
 .container{
+  max-width: 1170px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.header{
+  max-height: 185px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.upper-head{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.phone-number{
+  margin-right: auto;
+}
+
+.bottom-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav{
+  margim: 25px 45px;
+}
+
+.nav-list{
+  display: flex;
+  gap: 45px;
+}
+
+.banner-cards{
+  width: 100%;
+  display: grid;
+  gap: 24px;
+  justify-items: center;
+  grid-template-areas:"a c""b c";
+  list-style: none;
+}
+
+.ban-1{
+  grid-area: a;
+  background: url("./img/advant-pict-1.png");
+}
+
+.ban-2{
+  grid-area: b;
+  background: url("./img/advant-pict-2.png");
+}
+
+.ban-3{
+  grid-area: c;
+  background: url("./img/advant-pict-3.png");
+}
+
+.banner-card-item{
+  min-width: 573px;
+  min-height: 258px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.banner-card-content{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.banner-card-title{
+  color: white;
+}
+
+.banner-card-descriptor{
+  margin-bottom: auto;
+}
+
+.about-content{
+  max-width: 888px;
 }
