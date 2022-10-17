@@ -1,0 +1,385 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+html {
+  height: 100%;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*-----------------------*/
+
+a{
+  text-decoration: none;
+}
+
+body{
+  font-family: Muller;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+
+/*-----------------------*/
+@font-face {
+  font-weight: 400;
+  font-family: "Muller";
+  font-style: normal;
+  src: url(2DF5B4_F_0.woff2) format("woff2"),url("./fonts/MullerRegular.woff") format("woff")
+}
+
+.main{
+  padding: 30px;
+  background: #E5E5E5;
+}
+
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.header{
+  max-height: 185px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section-title{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: #333333;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.card-descriptor{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+.upper-head{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.login-btn{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+}
+
+.login-btn:before{
+  content: url("./img/vector.svg");
+  margin-right: 7px;
+}
+
+.phone-number{
+  margin-right: auto;
+}
+
+.bottom-head{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 70px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  gap: 90px;
+}
+
+.nav-list{
+  display: flex;
+  gap: 45px;
+  padding: 10px 45px;
+}
+
+.nav-item{
+
+}
+
+.nav-links{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn-container{
+  display: flex;
+  gap: 40px;
+}
+
+.btn{
+  padding: 13px 20px;
+  gap: 10px;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+  background-color: white;
+}
+
+.banner-cards{
+  width: 100%;
+  display: grid;
+  gap: 24px;
+  justify-items: center;
+  grid-template-areas:"a c""b c";
+  list-style: none;
+}
+
+.banner-card-item{
+  min-width: 573px;
+  min-height: 258px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+
+.ban-1{
+  grid-area: a;
+  background: url("./img/advant-pict-1.png");
+}
+
+.ban-2{
+  grid-area: b;
+  background: url("./img/advant-pict-2.png");
+}
+
+.ban-3{
+  grid-area: c;
+  background: url("./img/advant-pict-3.png");
+}
+
+.banner-card-content{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.big-banner{
+  margin-top: 160px;
+}
+
+.banner-card-title{
+  max-width: 420px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.banner-card-title::last-child{
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+
+.banner-card-descriptor{
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.banner-card-links{
+  margin-top: 45px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #F0BF5F;
+  background-image: url("./img/Rect-2.svg");
+  background-repeat: no-repeat;
+  background-position-x: 92px;
+}
+
+.banner-card-descriptor{
+  margin-bottom: auto;
+}
+
+.about-content{
+  max-width: 888px;
+  padding: 0;
+}
+
+.services-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px;
+}
+
+.services-list-item{
+  max-width: 573px;
+  min-height: 330px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.services-card-title{
+  margin-top: 26px;
+  margin-left: 45px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #CC9933;
+}
+
+.services-card-descriptor{
+  margin-left: 45px;
+  max-width: 400px;
+}
+
+.advant-list{
+  display: grid;
+  grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 22px;
+}
+
+.advant-item{
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 276px;
+  /*min-height: 276px;*/
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+.card-descriptor{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+.placement-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.placement-item{
+  background-color: white;
+  border-radius: 15px;
+}
+
+.placement-img{
+  width: 100%;
+  max-height: 217px;
+}
+
+.card-content{
+  padding: 45px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.grey-text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.place-price-item{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.place-card-title{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.place-card-btn{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 13px 20px;
+  gap: 10px;
+}
+
+.star-rate{
+  position: absolute;
+  right: 45px;
+}
