@@ -383,7 +383,3 @@ body{
   position: absolute;
   right: 45px;
 }
-
-.rating-4{
-  content: url("./img/gold-star.svg");
-}
