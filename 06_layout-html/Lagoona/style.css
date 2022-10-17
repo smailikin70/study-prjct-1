@@ -94,6 +94,7 @@ body{
   line-height: 40px;
   color: #333333;
   margin-bottom: 20px;
+  margin-left: 40px;
 }
 
 .card-descriptor{
@@ -128,20 +129,49 @@ body{
 .bottom-head{
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
   min-height: 70px;
   background: #FFFFFF;
   border-radius: 15px;
-}
-
-.nav{
-  margim: 25px 45px;
+  gap: 90px;
 }
 
 .nav-list{
   display: flex;
   gap: 45px;
+  padding: 10px 45px;
+}
+
+.nav-item{
+
+}
+
+.nav-links{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+  text-decoration: none;
+}
+
+.btn-container{
+  display: flex;
+  gap: 40px;
+}
+
+.btn{
+  padding: 13px 20px;
+  gap: 10px;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #CC9933;
+  background-color: white;
 }
 
 .banner-cards{
@@ -262,4 +292,98 @@ body{
   max-width: 400px;
 }
 
+.advant-list{
+  display: grid;
+  grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 22px;
+}
 
+.advant-item{
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 276px;
+  /*min-height: 276px;*/
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+.card-descriptor{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #000000;
+}
+
+.placement-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.placement-item{
+  background-color: white;
+  border-radius: 15px;
+}
+
+.placement-img{
+  width: 100%;
+  max-height: 217px;
+}
+
+.card-content{
+  padding: 45px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.grey-text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #999999;
+}
+
+.text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.place-price-item{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.place-card-title{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.place-card-btn{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 13px 20px;
+  gap: 10px;
+}
+
+.star-rate{
+  position: absolute;
+  right: 45px;
+}
+
+.rating-4{
+  content: url("./img/gold-star.svg");
+}
