@@ -227,6 +227,14 @@ body{
   color: #FFFFFF;
 }
 
+.big-banner-text{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+
 .banner-card-title::last-child{
   font-weight: 700;
   font-size: 60px;
@@ -380,6 +388,30 @@ body{
 }
 
 .star-rate{
-  position: absolute;
-  right: 45px;
+  display: flex;
+  justify-content: space-between;
+  gap: 52px;
+}
+
+.last-placement-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url("./img/place-last.png");
+}
+
+.placement-showall{
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 50px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: #FFFFFF;
+}
+
+.placement-showall::after{
+  padding-top: 3px;
+  content: url("./img/Rectangle-3.svg");
 }
