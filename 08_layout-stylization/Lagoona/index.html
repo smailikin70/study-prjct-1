@@ -483,6 +483,123 @@
               </ul>
           </div>
       </section>
+      <section class="section invite">
+          <h2 class="section-title invite-title">
+              Хочу в тур
+          </h2>
+          <div class="invite-banner">
+              <form action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank" class="invite-form">
+                  <ul class="invite-form-list">
+                      <li class="invite-form-item">
+                          <label for="city" class="invite-form-label">Город вылета</label>
+                          <select name="city" id="city" class="form-select">
+                              <option value="Saint-peterburg">Санкт-Петербург</option>
+                              <option value="Moscow">Москва</option>
+                              <option value="London">Лондон</option>
+                              <option value="Saint-Francisco">Сан-Франциско</option>
+                          </select>
+                      </li>
+                      <li class="invite-form-item">
+                          <label for="Country" class="invite-form-label">Страна</label>
+                          <select name="Country" id="Country" class="form-select">
+                              <option value="Russia">РФ</option>
+                              <option value="England">Англия</option>
+                              <option value="USA">Америка</option>
+                          </select>
+                      </li>
+                      <li class="invite-form-item">
+                          <label for="date" class="invite-form-label">Дата прибытия</label>
+                          <input type="date" id="date" placeholder="Date" class="form-date">
+                      </li>
+                      <li class="invite-form-item">
+                          <label for="nights" class="invite-form-label">Ночей</label>
+                          <input id="nights" type="number" min="1" max="365" step="1" placeholder="Amount nights" class="form-amount">
+                      </li>
+                      <li class="invite-form-item">
+                          <label for="Tourists" class="invite-form-label">Туристы</label>
+                          <input type="number" id="Tourists" min="1" max="100" step="1" placeholder="Amount tourists" class="form-amount">
+                      </li>
+                      <li class="invite-form-item invite-form-button">
+                          <input type="submit" value="Отправить" class="invite-btn">
+                      </li>
+                  </ul>
+              </form>
+          </div>
+      </section>
+      <section class="section contacts">
+          <h2 class="section-title contacts-title">
+              Контакты
+          </h2>
+          <div class="contacts-banner">
+              <div class="info">
+                  <ul class="info-list">
+                      <li class="info-item">
+                          <h3 class="info-title">
+                              Адрес
+                          </h3>
+                          <div class="information">
+                              Москва, улица Юности, дом 5 строение 4, офис 2
+                          </div>
+                      </li>
+                      <li class="info-item">
+                          <h3 class="info-title">
+                              Телефоны
+                          </h3>
+                          <div class="information">
+                              <a href="#" class="phone-number">+7 499 535-64-34</a>
+                              <a href="#" class="phone-number">+7 495 005-05-44</a>
+                          </div>
+                      </li>
+                      <li class="info-item">
+                          <h3 class="info-title">
+                              Email
+                          </h3>
+                          <div class="information">
+                              <a href="#" class="mail">lg.oona@mail.ru</a>
+                              <p class="grey-text">по вопросам бронирования</p>
+                              <a href="#" class="mail">hotels.ln@mail.ru</a>
+                              <p class="grey-text">по вопросам сотрудничества</p>
+                          </div>
+                      </li>
+                      <li class="info-item">
+                          <h3 class="info-title">
+                              График
+                          </h3>
+                          <div class="information">
+                              Понедельник-пятница, с 10:00 до 19:00
+                          </div>
+                      </li>
+                  </ul>
+                  <button class="btn info-btn">
+                      Построить маршрут
+                  </button>
+              </div>
+              <div class="info-img">
+                  <img src="./img/Lagoona_photo.png" alt="Фото офис Лагуна">
+              </div>
+          </div>
+      </section>
+      <footer class="footer">
+          <div class="rules">
+              <p class="rules-text">© 2012–2020 Управляющая компания Объединённой сети «Лагуна Хотелс»</p>
+              <p class="rules-text">Представленная на сайте информация носит справочный характер и не является публичной офертой</p>
+              <a href="#" class="rules-link">Пользовательское соглашение</a>
+          </div>
+          <div class="footer-contacts">
+              <p class="adress">
+                  11710, улица Юности, дом 5 строение 4, офис 2
+              </p>
+              <a href="#" class="phone-number">+7 499 535-64-34</a>
+              <a href="#" class="phone-number phone-numbers">+7 495 005-05-44</a>
+              <a href="#" class="mail">lg.oona@mail.ru</a>
+              <a href="#" class="mail">hotels.ln@mail.ru</a>
+          </div>
+          <div class="social">
+              <a href="#" class="social-links"><img src="./img/social-1.svg" alt="trip-advisor"></a>
+              <a href="#" class="social-links"><img src="./img/social-2.svg" alt="ok"></a>
+              <a href="#" class="social-links"><img src="./img/social-3.svg" alt="vk"></a>
+          </div>
+      </footer>
   </div>
 </div>
 </body>
