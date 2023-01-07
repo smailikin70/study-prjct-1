@@ -509,15 +509,15 @@
                       </li>
                       <li class="invite-form-item">
                           <label for="date" class="invite-form-label">Дата прибытия</label>
-                          <input type="date" id="date" placeholder="Date" class="form-date">
+                          <input name="date" type="date" id="date" placeholder="Date" class="form-date">
                       </li>
                       <li class="invite-form-item">
                           <label for="nights" class="invite-form-label">Ночей</label>
-                          <input id="nights" type="number" min="1" max="365" step="1" placeholder="Amount nights" class="form-amount">
+                          <input id="nights" name="nights" type="number" min="1" max="365" step="1" placeholder="Amount nights" class="form-amount">
                       </li>
                       <li class="invite-form-item">
                           <label for="Tourists" class="invite-form-label">Туристы</label>
-                          <input type="number" id="Tourists" min="1" max="100" step="1" placeholder="Amount tourists" class="form-amount">
+                          <input name="tourists" type="number" id="Tourists" min="1" max="100" step="1" placeholder="Amount tourists" class="form-amount" required>
                       </li>
                       <li class="invite-form-item invite-form-button">
                           <input type="submit" value="Отправить" class="invite-btn">
