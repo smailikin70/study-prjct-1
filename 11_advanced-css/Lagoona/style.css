@@ -132,6 +132,7 @@ body{
 .login-btn:focus{
   color: var(--main);
   border: 1px solid var(--main);
+  border-radius: 5px;
 }
 
 .login-btn:active{
@@ -155,6 +156,7 @@ body{
 .phone-number:focus{
   color: var(--main);
   border: 1px solid var(--main);
+  border-radius: 5px;
   padding: 3px;
 }
 
@@ -203,6 +205,7 @@ body{
 .nav-links:focus{
   color: var(--main);
   border: 1px solid var(--main);
+  border-radius: 5px;
 }
 
 .nav-links:active{
@@ -629,6 +632,12 @@ placement-item:active{
   border-bottom: 1px solid #E9E9E9;
 }
 
+.info-item:last-child{
+  padding: 0;
+  border-bottom: none;
+  grid-template-columns: 1fr 1fr;
+}
+
 .info-title{
   font-weight: 700;
   font-size: 20px;
@@ -667,6 +676,7 @@ placement-item:active{
   color: var(--main);
   padding: 3px;
   border: 1px solid var(--main);
+  border-radius: 5px;
 }
 
 .mail:active{
