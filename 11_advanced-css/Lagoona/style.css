@@ -58,6 +58,12 @@ body{
   color: #000000;
 }
 
+:root{
+  --black: #000;
+  --white: #fff;
+  --main: #CC9933;
+  --active: #A47312;
+}
 
 /*-----------------------*/
 @font-face {
@@ -101,7 +107,7 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
-  color: #000000;
+  color: var(--black);
 }
 
 .upper-head{
@@ -114,7 +120,22 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #CC9933;
+  color: var(--main);
+  padding: 5px;
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.login-btn:hover{
+  color: var(--main);
+}
+
+.login-btn:focus{
+  color: var(--main);
+  border: 1px solid var(--main);
+}
+
+.login-btn:active{
+  color: var(--active);
 }
 
 .login-btn-arrow{
@@ -122,7 +143,23 @@ body{
 }
 
 .phone-number{
+  color: #666666;
   margin-right: auto;
+  transition: color 0.3s ease-in-out;
+}
+
+.phone-number:hover{
+  color: var(--main);
+}
+
+.phone-number:focus{
+  color: var(--main);
+  border: 1px solid var(--main);
+  padding: 3px;
+}
+
+.phone-number:active{
+  color: var(--active);
 }
 
 .bottom-head{
@@ -130,15 +167,17 @@ body{
   align-items: center;
   width: 100%;
   min-height: 70px;
-  background: #FFFFFF;
+  background: var(--white);
   border-radius: 15px;
-  gap: 90px;
+  gap: 70px;
 }
 
 .nav-list{
   display: flex;
   gap: 45px;
   padding: 10px 45px;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-item{
@@ -152,25 +191,51 @@ body{
   line-height: 16px;
   color: #666666;
   text-decoration: none;
+  padding: 5px;
+
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
-.btn-container{
-  display: flex;
-  gap: 40px;
+.nav-links:hover{
+  color: var(--main);
+}
+
+.nav-links:focus{
+  color: var(--main);
+  border: 1px solid var(--main);
+}
+
+.nav-links:active{
+  color: var(--active);
 }
 
 .btn{
   padding: 13px 20px;
-  gap: 10px;
-  border: 1px solid #CC9933;
+  border: 1px solid var(--main);
   border-radius: 10px;
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #CC9933;
-  background-color: white;
+  color: var(--main);
+  background-color: var(--white);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.btn:hover{
+  background-color: var(--main);
+  color: var(--white);
+}
+
+.btn:focus{
+  background-color: var(--main);
+  color: var(--white);
+}
+
+.btn:active{
+  background-color: var(--main);
+  color: var(--white);
 }
 
 .banner-cards{
@@ -226,7 +291,7 @@ body{
   font-weight: 700;
   font-size: 40px;
   line-height: 40px;
-  color: #FFFFFF;
+  color: var(--white);
 }
 
 .big-banner-text{
@@ -234,14 +299,14 @@ body{
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
-  color: #FFFFFF;
+  color: var(--white);
 }
 
 .banner-card-title::last-child{
   font-weight: 700;
   font-size: 60px;
   line-height: 60px;
-  color: #FFFFFF;
+  color: var(--white);
 }
 
 .banner-card-descriptor{
@@ -249,7 +314,7 @@ body{
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: var(--white);
   opacity: 0.8;
 }
 
@@ -261,19 +326,24 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #F0BF5F;
+  color: var(--main);
   /*background-image: url("./img/Rect-2.svg");*/
   /*background-repeat: no-repeat;*/
   /*background-position-x: 92px;*/
-}
-
-.txt{
-  margin-top: 5px;
-  margin-right: 5px;
+  transition: color 0.3s ease-in-out;
 }
 
 .banner-card-links-arrow{
-  padding-top: 5px;
+  padding-left: 5px;
+  transition:  padding-left 0.3s ease-in-out;
+}
+
+.banner-card-item:hover .banner-card-content .banner-card-links .banner-card-links-arrow{
+  padding-left: 15px;
+}
+
+.banner-card-item:active .banner-card-content .banner-card-links{
+  color: var(--white);
 }
 
 .banner-card-descriptor{
@@ -295,22 +365,44 @@ body{
 .services-list-item{
   flex-basis: 49%;
   min-height: 330px;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 15px;
 }
 
 .services-card-title{
+  display: flex;
+  align-items: center;
   margin-top: 26px;
   margin-left: 45px;
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
-  color: #CC9933;
+  color: var(--main);
+  gap: 5px;
+  transition: color 0.3s ease-in-out, gap 0.3s ease-in-out;
 }
 
 .services-card-descriptor{
   margin-left: 45px;
   max-width: 400px;
+}
+
+.services-title-arrow{
+  stroke: #var(--main);
+  transition: stroke 0.3s ease-in-out;
+}
+
+.services-list-item:hover .services-card-title{
+  gap: 15px;
+  color: #F0BF5F;
+}
+
+.services-list-item:hover .services-card-title .services-title-arrow{
+  stroke: #F0BF5F;
+}
+
+.services-list-item:active .services-card-title{
+  color: var(--active);
 }
 
 .advant-list{
@@ -327,7 +419,7 @@ body{
   justify-content: center;
   flex-basis: 24%;
   /*min-height: 276px;*/
-  background: #FFFFFF;
+  background: var(--white);
   border-radius: 15px;
 }
 
@@ -335,7 +427,7 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
-  color: #000000;
+  color: var(--black);
 }
 
 .placement-list{
@@ -346,7 +438,7 @@ body{
 
 .placement-item{
   flex-basis: 33%;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 15px;
 }
 
@@ -376,21 +468,21 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #000000;
+  color: var(--black);
 }
 
 .place-price-item{
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
-  color: #000000;
+  color: var(--black);
 }
 
 .place-card-title{
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: #000000;
+  color: var(--black);
 }
 
 .place-card-btn{
@@ -409,20 +501,19 @@ body{
 
 .last-placement-item{
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: flex-end;
   background-image: url("./img/place-last.png");
 }
 
 .placement-showall{
-  display: flex;
-  justify-content: space-between;
   margin: 25px 50px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 200%;
-  color: #FFFFFF;
+  color: var(--white);
 }
 
 /*.placement-showall::after{*/
@@ -431,7 +522,31 @@ body{
 /*}*/
 
 .placement-showall-arrow{
-  padding-top: 15px;
+
+  padding-left: 5px;
+  transition: padding-left 0.4s ease-in-out;
+}
+
+.showall{
+  display: flex;
+  align-items: center;
+  color: var(--white);
+}
+
+.placement-showall::before{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+}
+
+.placement-item:hover .placement-showall .placement-showall-arrow{
+  padding-left: 10px;
+}
+
+placement-item:active{
 }
 
 .invite{
@@ -445,7 +560,7 @@ body{
 }
 
 .invite-banner{
-  background: #FFFFFF;
+  background: var(--white);
   border-radius: 15px;
   margin: 45px;
 }
@@ -493,18 +608,8 @@ body{
   text-decoration: none;
   border: none;
 }
-
-.invite-btn{
-  background-color: #FFFFFF;
-  color: #CC9933;
-  width: 108px;
-  height: 42px;
-  border: 1px solid #CC9933;
-  border-radius: 10px;
-}
-
 .contacts-banner{
-  background: #FFFFFF;
+  background: var(--white);
   border-radius: 15px;
   padding: 45px;
   display: grid;
@@ -542,14 +647,30 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #CC9933;
+  color: var(--main);
 }
 
 .mail{
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #CC9933;
+  color: var(--main);
+}
+
+
+.mail:hover{
+
+  color: var(--main);
+}
+
+.mail:focus{
+  color: var(--main);
+  padding: 3px;
+  border: 1px solid var(--main);
+}
+
+.mail:active{
+  color: var(--active);
 }
 
 .info-btn{
@@ -568,7 +689,7 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 190%;
-  color: #FFFFFF;
+  color: var(--white);
 
   background-image: url("./img/Sun.svg");
   background-repeat: no-repeat;
@@ -586,7 +707,7 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #CC9933;
+  color: var(--main);
 }
 
 .footer-contacts{
@@ -598,6 +719,8 @@ body{
   margin-bottom: 15px;
 }
 
+
+
 .phone-numbers{
   margin-bottom: 15px;
 }
@@ -606,4 +729,10 @@ body{
   display: flex;
   flex-direction: column;
   margin-left: 100px;
+}
+
+.favicon{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
 }
