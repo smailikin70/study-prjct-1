@@ -744,3 +744,19 @@ body {
     flex-direction: column;
     margin-left: 100px;
 }
+
+.social-links-svg{
+    fill: #999999;
+}
+
+.social-links-svg:hover{
+    fill: #CC9933;
+}
+
+.social-links-svg:focus{
+    fill: #CC9933;
+}
+
+.social-links-svg:active{
+    fill: #A47312;
+}
