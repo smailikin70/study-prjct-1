@@ -132,8 +132,14 @@ body {
     transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
+.login-btn-arrow {
+    margin-right: 7px;
+    fill: #CC9933;
+    transition: fill 0.3s ease-in-out;
+}
+
 .login-btn:hover {
-    color: var(--main);
+    color: #F0BF5F;
 }
 
 .login-btn:focus {
@@ -146,8 +152,17 @@ body {
     color: var(--active);
 }
 
-.login-btn-arrow {
-    margin-right: 7px;
+
+.login-btn:hover .login-btn-arrow{
+    fill: #F0BF5F;
+}
+
+.login-btn:focus .login-btn-arrow{
+    fill: var(--main);
+}
+
+.login-btn:active .login-btn-arrow{
+    fill: var(--active);
 }
 
 .phone-number {
@@ -745,18 +760,18 @@ body {
     margin-left: 100px;
 }
 
-.social-links-svg{
+.social-links-svg {
     fill: #999999;
 }
 
-.social-links-svg:hover{
+.social-links-svg:hover {
     fill: #CC9933;
 }
 
-.social-links-svg:focus{
+.social-links-svg:focus {
     fill: #CC9933;
 }
 
-.social-links-svg:active{
+.social-links-svg:active {
     fill: #A47312;
 }
