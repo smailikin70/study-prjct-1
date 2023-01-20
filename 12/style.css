@@ -25,6 +25,12 @@ h1, h2, h3, h4, h5, h6 {
     color: #000;
 }
 
+button{
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+
 /*===============*/
 
 .container {
@@ -55,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn:focus {
-    background: # #FFB84D;
+    background: #FFB84D;
 }
 
 .btn:active {
@@ -65,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 .transparent {
     background: transparent;
     border: 3px solid #000;
-    transition: background-color 0.2 ease-in-out, border 0.2 ease-in-out;
+    transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
 }
 
 .transparent:hover {
@@ -143,13 +149,104 @@ h1, h2, h3, h4, h5, h6 {
     color: #E1670E;
     border: none;
     border-bottom: 2px #E1670E solid;
-
 }
 
 .nav--item:last-child {
     margin-left: 170px;
 }
+/*===========*/
 
+.search{
+    display: none;
+    min-width: 500px;
+    /*display: flex;*/
+    justify-content: right;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+}
+
+.search--input--container{
+    width: 100%;
+    position: relative;
+    padding: 16px;
+}
+
+.search--line{
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #CACACA;
+    margin:0 5px;
+    border-radius: 0;
+}
+
+.search--underline{
+    position: absolute;
+    width: 95%;
+    height: 1px;
+    background-color: #CACACA;
+    margin: 0 auto;
+
+}
+
+.search--svg{
+    fill: #000000;
+    stroke: #000000;
+    transition: fill 0.2s ease-in-out, stroke 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.search--svg--large{
+    padding: 4px;
+}
+
+.search--btn:hover .search--svg{
+    fill: #FF9900;
+    stroke: #FF9900;
+}
+
+.search--btn:focus .search--svg{
+    fill: #000000;
+    stroke: #000000;
+    border: 2px solid #FF9900;
+}
+
+.search--btn:active .search--svg{
+    fill: #FF9900;
+    stroke: #FF9900;
+    border: none;
+}
+
+.close--svg{
+    fill: #CACACA;
+    stroke: #CACACA;
+    padding: 4px;
+    transition: fill 0.2s ease-in-out, stroke 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+
+.close--btn:hover .close--svg{
+    fill: #FF9900;
+    stroke: #FF9900;
+}
+
+.close--btn:focus .close--svg{
+    fill: #000000;
+    stroke: #000000;
+    border: 2px solid #FF9900;
+}
+
+.close--btn:active .close--svg{
+    fill: #FF9900;
+    stroke: #FF9900;
+    border: none;
+}
+
+/*============*/
 .burger {
     display: none;
     margin: 20px;
