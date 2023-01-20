@@ -1,3 +1,7 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
 body, p {
     padding: 0;
     margin: 0;
@@ -22,9 +26,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*===============*/
-body{
-    padding: 0 15px;
-}
 
 .container {
     max-width: 1770px;
@@ -38,6 +39,7 @@ body{
 }
 
 .btn {
+    display: inline-block;
     text-align: center;
     padding: 25px;
     color: white;
@@ -45,11 +47,38 @@ body{
     font-weight: 700;
     background: #FF9900;
     border-radius: 16px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background: #FFB84D;
+}
+
+.btn:focus {
+    background: # #FFB84D;
+}
+
+.btn:active {
+    background: #E1670E;
 }
 
 .transparent {
     background: transparent;
     border: 3px solid #000;
+    transition: background-color 0.2 ease-in-out, border 0.2 ease-in-out;
+}
+
+.transparent:hover {
+    background: #FF9900;
+}
+
+.transparent:focus {
+    background: #FF9900;
+}
+
+.transparent:active {
+    background: #E1670E;
+    border: none;
 }
 
 .title {
@@ -94,11 +123,61 @@ body{
 
 .nav--list {
     display: flex;
-    gap: 85px;
+    gap: 80px;
+}
+
+.nav--links {
+    transition: border 0.2s ease-in-out;
+    padding: 5px;
+}
+
+.nav--links:hover {
+    border-bottom: 2px #FF9900 solid;
+}
+
+.nav--links:focus {
+    border: 2px #FF9900 solid;
+}
+
+.nav--links:active {
+    color: #E1670E;
+    border: none;
+    border-bottom: 2px #E1670E solid;
+
 }
 
 .nav--item:last-child {
-    margin-left: 175px;
+    margin-left: 170px;
+}
+
+.burger {
+    display: none;
+    margin: 20px;
+    padding: 2px;
+}
+
+.burger--item {
+    content: '';
+    width: 30px;
+    height: 3px;
+    background: #000000;
+    border: 1px solid #000000;
+}
+
+.burger--item:first-child {
+    top: calc(100% / 3);
+}
+
+.burger--item:last-child {
+    bottom: calc(100% / 3);
+}
+
+.burger:hover {
+    border: 2px solid #FF9900;
+}
+
+.burger:focus .burger--item {
+    background: #E1670E;
 }
 
 /*----banner----*/
@@ -114,7 +193,6 @@ body{
 
 .banner--content {
     width: 51%;
-    margin-bottom: 25px;
 }
 
 .banner--title {
@@ -123,7 +201,7 @@ body{
     line-height: 85px;
     color: #FFFFFF;
     margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 }
 
 .banner--descr {
@@ -131,7 +209,7 @@ body{
     font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
-    margin-bottom: 113px;
+    margin-bottom: 90px;
 }
 
 .banner--btn {
@@ -168,7 +246,7 @@ body{
     width: 70%;
 }
 
-.about--title{
+.about--title {
     margin-bottom: 20px;
 }
 
@@ -283,16 +361,32 @@ body{
     font-size: 18px;
     line-height: 22px;
     color: #000000;
+    border: none;
+    transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
 }
 
-.slider--btn:first-child {
-    color: #E1670E;
+.slider--btn:hover {
+    color: #FF9900;
 }
+
+.slider--btn:focus {
+    color: black;
+    border: 2px solid #FF9900;
+}
+
+.slider--btn:active {
+    color: #FF9900;
+    border: none;
+}
+
+/*.slider--btn:first-child {*/
+/*    color: #E1670E;*/
+/*}*/
 
 .hiw--banner {
     display: flex;
     gap: 150px;
-    margin-bottom: 100px;
+    margin-bottom: 67px;
 }
 
 .hiw--title {
@@ -325,20 +419,35 @@ body{
 }
 
 .hiw--btn {
-    width: 99px;
-    height: 20px;
     font-size: 16px;
     line-height: 20px;
     padding: 20px 38px;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .hiw--btn:last-child {
+    color: black;
     border: 1px solid #000;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: #000;
     margin-left: 38px;
+}
+
+.hiw--btn:last-child:hover {
+    color: #FFFFFF;
+    background: #666666;
+}
+
+.hiw--btn:last-child:focus {
+    color: #FFFFFF;
+    background: #666666;
+}
+
+.hiw--btn:last-child:active {
+    color: #FFFFFF;
+    background: #000000;
 }
 
 /*-----question-----*/
@@ -372,6 +481,20 @@ body{
 
 .dropdown--btn--svg {
     fill: #e1e1e1;
+    transition: fill 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+.dropdown--btn--svg:hover {
+    fill: #FF9900;
+}
+
+.dropdown--btn--svg:focus {
+    fill: #FF9900;
+}
+
+.dropdown--btn--svg:active {
+    fill: transparent;
+    background-image: url("./img/X.svg");
 }
 
 .answer {
@@ -395,8 +518,8 @@ body{
 
 .footer--content {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    align-items: center;
+    grid-template-columns: 1fr 1.7fr 1fr;
+    align-items: flex-start;
     gap: 250px;
 }
 
@@ -426,7 +549,7 @@ body{
     gap: 0;
 }
 
-.nav--links{
+.nav--links {
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
@@ -437,7 +560,20 @@ body{
     font-size: 18px;
     line-height: 36px;
     color: #CACACA;
+    transition: color 0.2s ease-in-out, border 0.2s ease-in-out;
+}
 
+.footer--nav--item:hover {
+    color: #FF9900;
+}
+
+.footer--nav--item:focus {
+    color: #CACACA;
+    border: 2px #FF9900 solid;
+}
+
+.footer--nav--item:active {
+    color: #E1670E;
 }
 
 .social {
@@ -447,11 +583,27 @@ body{
     gap: 25px;
 }
 
-.social--icon{
+.social--icon {
     fill: #7C7C7C;
+    transition: fill 0.2s ease-in-out;
 }
 
+.social--icon:hover {
+    fill: #FF9900;
+}
+
+.social--icon:focus {
+    fill: #7C7C7C;
+    border: 2px solid #FF9900;
+}
+
+.social--icon:active {
+    fill: #E1670E;
+}
+
+
 .text {
+    margin-top: 92px;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
@@ -460,7 +612,7 @@ body{
 
 /*-------*/
 
-.footer--form{
+.footer--form {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -469,40 +621,48 @@ body{
     gap: 25px;
 }
 
-label{
+label {
     display: none;
 }
 
-input{
+input {
     width: 100%;
     padding: 14px 24px;
     width: 100%;
-    background: #414141;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #CACACA;
     border: none;
     background-color: #414141;
     border-radius: 16px;
 }
 
-textarea{
+textarea {
     padding: 14px 24px;
     width: 100%;
-    background: #414141;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #CACACA;
     border: none;
     background-color: #414141;
     border-radius: 16px;
 }
 
-.form--btn{
-    width: 269px;
-    height: 58px;
+.form--btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
     text-align: center;
     padding: 19px 52px;
     margin: 0 auto;
 }
 
-.form--title{
+.form--title {
     font-weight: 400;
     font-size: 48px;
     line-height: 59px;
     color: #CACACA;
 }
+
