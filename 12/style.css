@@ -42,6 +42,7 @@ button{
     display: flex;
     flex-direction: column;
     gap: 50px;
+    margin: 0 75px;
 }
 
 .btn {
@@ -114,7 +115,7 @@ button{
 }
 
 .head {
-    margin: 0 15px;
+    margin: 0 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -149,10 +150,6 @@ button{
     color: #E1670E;
     border: none;
     border-bottom: 2px #E1670E solid;
-}
-
-.nav--item:last-child {
-    margin-left: 170px;
 }
 /*===========*/
 
@@ -248,17 +245,19 @@ button{
 
 /*============*/
 .burger {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 35px;
     margin: 20px;
-    padding: 2px;
+    padding: 4px;
 }
 
 .burger--item {
-    content: '';
-    width: 30px;
+    width: 100%;
     height: 3px;
     background: #000000;
-    border: 1px solid #000000;
 }
 
 .burger--item:first-child {
@@ -269,11 +268,11 @@ button{
     bottom: calc(100% / 3);
 }
 
-.burger:hover {
+.burger:hover, .burger:focus {
     border: 2px solid #FF9900;
 }
 
-.burger:focus .burger--item {
+.burger:active .burger--item {
     background: #E1670E;
 }
 
@@ -369,7 +368,8 @@ button{
 
 
 .about--banner--box {
-    height: 622px;
+    min-height: 622px;
+    height: 100%;
     display: flex;
     align-items: flex-end;
     background: url("./img/about-img.jpg") no-repeat;
@@ -437,7 +437,7 @@ button{
 .card--descr {
     font-weight: 400;
     font-size: 16px;
-    line-height: 32px;
+    line-height: 26px;
     color: #000000;
 }
 
@@ -494,8 +494,8 @@ button{
 }
 
 .banner--img {
-    width: 870px;
-    height: 460px;
+    max-width: 50%;
+    object-fit: cover;
     border-radius: 32px;
 }
 
@@ -618,6 +618,7 @@ button{
     grid-template-columns: 1fr 1.7fr 1fr;
     align-items: flex-start;
     gap: 250px;
+    margin: 0 75px;
 }
 
 .section {

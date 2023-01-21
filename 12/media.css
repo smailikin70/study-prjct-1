@@ -1,0 +1,146 @@
+@media screen and (max-width: 1320px) {
+    .hiw--banner {
+        gap: 50px;
+    }
+
+    .banner--img {
+        width: 437px;
+        height: 689px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .nav{
+        display: none;
+    }
+
+    .burger{
+        display: flex;
+    }
+
+    .banner--content {
+        width: 100% !important;
+    }
+
+    .about--descr{
+        width: 100%;
+    }
+
+    .about--banner{
+        grid-template-areas: 'A' 'B' 'C';
+    }
+
+    .banner--content{
+        width: 50%;
+    }
+
+    .footer--content{
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .text{
+        display: none;
+    }
+
+    .footer--nav{
+        display: flex;
+    }
+
+    .footer--content{
+        gap: 100px;
+        margin: 0 50px;
+    }
+
+    .main, .head{
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 824px) {
+    .slider--buttons{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hiw--banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner--title{
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 61px;
+        color: #FFFFFF;
+    }
+
+    .banner--descr{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 60px;
+    }
+
+    .banner--img {
+        max-width: 100%;
+        width: 100%;
+        height: 284px;
+    }
+
+    .question--item{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+        color: #000000;
+    }
+
+    .section{
+        width: 100%;
+    }
+
+    .footer--content{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: left;
+        gap: 20px;
+    }
+
+    .footer--nav--item{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .banner--title{
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .banner--descr{
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+    }
+
+    .banner--btn{
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: #FF9900;
+        border-radius: 8px;
+        padding: 13px 28px;
+    }
+
+    .about--banner--box{
+        display: none;
+    }
+
+
+}
