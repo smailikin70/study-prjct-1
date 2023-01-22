@@ -245,7 +245,7 @@ button{
 
 /*============*/
 .burger {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 40px;
@@ -354,6 +354,10 @@ button{
     gap: 32px;
 }
 
+.about--banner--320{
+    display: none;
+}
+
 .area-A {
     grid-area: A;
 }
@@ -415,6 +419,10 @@ button{
     border-radius: 32px;
     background: url("./img/about-icon-1.svg") no-repeat;
     background-position: 60px;
+}
+
+.icon{
+    display: none;
 }
 
 .about--card:last-child {

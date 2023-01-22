@@ -8,6 +8,12 @@
         height: 689px;
         object-fit: cover;
     }
+
+
+    .about--banner--content{
+        gap: 60px;
+    }
+
 }
 
 @media screen and (max-width: 1240px) {
@@ -29,6 +35,10 @@
 
     .about--banner{
         grid-template-areas: 'A' 'B' 'C';
+    }
+
+    .about--banner--content{
+        gap: 45px;
     }
 
     .banner--content{
@@ -112,10 +122,19 @@
 }
 
 @media screen and (max-width: 650px){
+    .main{
+        margin: 0 15px;
+    }
+
+    .banner{
+        padding: 20px;
+    }
+
     .banner--title{
         font-weight: 800;
         font-size: 20px;
         line-height: 24px;
+        text-align: center;
     }
 
     .banner--descr{
@@ -123,6 +142,7 @@
         font-size: 12px;
         line-height: 15px;
         text-align: center;
+        margin-bottom: 30px;
     }
 
     .banner--btn{
@@ -136,11 +156,176 @@
         background: #FF9900;
         border-radius: 8px;
         padding: 13px 28px;
+        margin-bottom: 34px;
     }
 
-    .about--banner--box{
+    .bullit{
+        bottom: 15px;
+    }
+
+    .about--banner {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about--banner--content{
         display: none;
     }
 
+    .about--title{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .about--banner--descr{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .about--banner--box{
+        min-height: 200px;
+        width: 100%;
+        background-image: none;
+    }
+
+    .about--banner--320{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about--btn{
+        color: #FF9900;
+    }
+
+    .about--img{
+        width: 100%;
+        border-radius: 16px;
+        object-fit: cover;
+    }
+
+    .about--banner--descr{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        color: #000000;
+    }
+
+    .about--card{
+        border: none;
+        min-height: 230px;
+        background-position: 0;
+        background-image: none;
+    }
+
+    .about--card:last-child{
+        background-image: none;
+    }
+
+    .icon{
+        display: block;
+        width: 64px;
+        height: 49px;
+        margin-top: 40px;
+        margin-bottom: 12px;
+    }
+
+    .card--info{
+        margin: 0;
+    }
+
+    .card--title{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .card--descr{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .hiw--banner{
+        gap: 16px;
+    }
+
+    .hiw--title{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .hiw--descr{
+        margin-bottom: 15px;
+    }
+
+    .slider--buttons{
+        gap: 40px;
+        margin-bottom: 16px;
+    }
+
+    .banner--img{
+        height: 160px;
+    }
+
+    .slider--btn{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .hiw--btn{
+        width: 49%;
+        display: inline-block;
+        margin: 0;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        padding: 0;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        border-radius: 8px;
+    }
+
+    .hiw--btn:last-child{
+        width: 39%;
+        margin: 0;
+        margin-left: 10px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+    }
+
+    .questions--title{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .question--item{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .dropdown--btn--svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .form--title{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .footer--content{
+        margin: 0 16px;
+    }
 
 }
