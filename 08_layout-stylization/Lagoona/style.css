@@ -117,8 +117,7 @@ body{
   color: #CC9933;
 }
 
-.login-btn:before{
-  content: url("./img/vector.svg");
+.login-btn-arrow{
   margin-right: 7px;
 }
 
@@ -197,16 +196,19 @@ body{
 .ban-1{
   grid-area: a;
   background: url("./img/advant-pict-1.png");
+  background-repeat: no-repeat;
 }
 
 .ban-2{
   grid-area: b;
   background: url("./img/advant-pict-2.png");
+  background-repeat: no-repeat;
 }
 
 .ban-3{
   grid-area: c;
   background: url("./img/advant-pict-3.png");
+  background-repeat: no-repeat;
 }
 
 .banner-card-content{
@@ -252,15 +254,26 @@ body{
 }
 
 .banner-card-links{
+  display: flex;
+  align-items: center;
   margin-top: 45px;
   text-decoration: none;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: #F0BF5F;
-  background-image: url("./img/Rect-2.svg");
-  background-repeat: no-repeat;
-  background-position-x: 92px;
+  /*background-image: url("./img/Rect-2.svg");*/
+  /*background-repeat: no-repeat;*/
+  /*background-position-x: 92px;*/
+}
+
+.txt{
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.banner-card-links-arrow{
+  padding-top: 5px;
 }
 
 .banner-card-descriptor{
@@ -280,7 +293,7 @@ body{
 }
 
 .services-list-item{
-  flex-basis: 573px;
+  flex-basis: 49%;
   min-height: 330px;
   background-color: white;
   border-radius: 15px;
@@ -312,7 +325,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex-basis: 276px;
+  flex-basis: 24%;
   /*min-height: 276px;*/
   background: #FFFFFF;
   border-radius: 15px;
@@ -332,7 +345,7 @@ body{
 }
 
 .placement-item{
-  flex-basis: 100%;
+  flex-basis: 33%;
   background-color: white;
   border-radius: 15px;
 }
@@ -412,8 +425,185 @@ body{
   color: #FFFFFF;
 }
 
-.placement-showall::after{
-  padding-top: 3px;
-  content: url("./img/Rectangle-3.svg");
+/*.placement-showall::after{*/
+/*  padding-top: 3px;*/
+/*  content: url("./img/Rectangle-3.svg");*/
+/*}*/
+
+.placement-showall-arrow{
+  padding-top: 15px;
 }
 
+.invite{
+  background-color: #E9E9E9;
+  border-radius: 15px;
+}
+
+.invite-title{
+  margin-top: 40px;
+  margin-left: 45px;
+}
+
+.invite-banner{
+  background: #FFFFFF;
+  border-radius: 15px;
+  margin: 45px;
+}
+
+.invite-form-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 41px;
+  padding: 30px;
+}
+
+.invite-form-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  flex-basis: 120px;
+  gap: 15px;
+}
+
+.invite-form-label{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.form-select{
+  text-decoration: none;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  /*background-image: url("./img/Rectangle_2.svg");*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: right;*/
+}
+
+.form-date{
+  text-decoration: none;
+  border: none;
+}
+
+.form-amount{
+  text-decoration: none;
+  border: none;
+}
+
+.invite-btn{
+  background-color: #FFFFFF;
+  color: #CC9933;
+  width: 108px;
+  height: 42px;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+}
+
+.contacts-banner{
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 45px;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+}
+
+.info-list{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.info-item {
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #E9E9E9;
+}
+
+.info-title{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.information{
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.phone-number{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+}
+
+.mail{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+}
+
+.info-btn{
+  margin-top: 50px;
+  padding: 27px;
+}
+
+.footer{
+  display: flex;
+  gap: 125px;
+  background: #333333;
+  border-radius: 15px;
+  padding: 45px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 190%;
+  color: #FFFFFF;
+
+  background-image: url("./img/Sun.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right 150px;
+}
+
+.rules{
+  flex-basis: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.rules-link{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #CC9933;
+}
+
+.footer-contacts{
+  display: flex;
+  flex-direction: column;
+}
+
+.adress{
+  margin-bottom: 15px;
+}
+
+.phone-numbers{
+  margin-bottom: 15px;
+}
+
+.social{
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}

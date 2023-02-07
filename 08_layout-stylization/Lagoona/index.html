@@ -15,7 +15,12 @@
               <div class="upper-head">
                   <img src="./img/logo.png" alt="Laoona logo" class="logo">
                   <address class="phone-number">+7 495 322-54-48</address>
-                  <a href="#" class="login-btn">Личный кабинет</a>
+                  <a href="#" class="login-btn">
+                      <svg class="login-btn-arrow" width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10.59 1.41L14.17 5H0V7H14.17L10.58 10.59L12 12L18 6L12 0L10.59 1.41ZM19 0V12H21V0H19Z" fill="#CC9933"/>
+                      </svg>
+                      Личный кабинет
+                  </a>
               </div>
               <div class="bottom-head">
                   <nav class="nav">
@@ -48,7 +53,10 @@
                               от 55 000 ₽
                           </span>
                           <a href="#" class="banner-card-links">
-                              Подробнее
+                              <span class="txt">Подробнее</span>
+                              <svg class="banner-card-links-arrow" width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#F0BF5F" stroke-width="2"/>
+                              </svg>
                           </a>
                       </div>
                   </li>
@@ -61,7 +69,10 @@
                               от 30 000 ₽
                           </span>
                           <a href="#" class="banner-card-links">
-                              Подробнее
+                              <span class="txt">Подробнее</span>
+                              <svg class="banner-card-links-arrow" width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#F0BF5F" stroke-width="2"/>
+                              </svg>
                           </a>
                       </div>
                   </li>
@@ -74,7 +85,10 @@
                               от 5 000 ₽
                           </span>
                           <a href="#" class="banner-card-links">
-                              Подробнее
+                              <span class="txt">Подробнее</span>
+                              <svg class="banner-card-links-arrow" width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M1.49998 1.00002L9.27815 8.7782L1.49998 16.5564" stroke="#F0BF5F" stroke-width="2"/>
+                              </svg>
                           </a>
                       </div>
                   </li>
@@ -460,12 +474,132 @@
                   <li class="placement-item last-placement-item">
 <!--                    <img src="./img/place-last.png" alt="" class="placement-img last-placement-img"> &lt;!&ndash;Уйдет в бекграунд&ndash;&gt;-->
                       <p class="placement-showall">
-                        Посмотрите все варианты
+                        <span class="txt">Посмотрите все варианты</span>
+                          <svg class="placement-showall-arrow" width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M0.778175 1.22183L8.55635 9L0.778175 16.7782" stroke="white" stroke-width="2"/>
+                          </svg>
                       </p>
                   </li>
               </ul>
           </div>
       </section>
+      <section class="section invite">
+          <h2 class="section-title invite-title">
+              Хочу в тур
+          </h2>
+          <div class="invite-banner">
+              <form action="https://jsonplaceholder.typicode.com/posts" method="post" target="_blank" class="invite-form">
+                  <ul class="invite-form-list">
+                      <li class="invite-form-item">
+                          <label for="city" class="invite-form-label">Город вылета</label>
+                          <select name="city" id="city" class="form-select">
+                              <option value="Saint-peterburg">Санкт-Петербург</option>
+                              <option value="Moscow">Москва</option>
+                              <option value="London">Лондон</option>
+                              <option value="Saint-Francisco">Сан-Франциско</option>
+                          </select>
+                      </li>
+                      <li class="invite-form-item">
+                          <label for="Country" class="invite-form-label">Страна</label>
+                          <select name="Country" id="Country" class="form-select">
+                              <option value="Russia">РФ</option>
+                              <option value="England">Англия</option>
+                              <option value="USA">Америка</option>
+                          </select>
+                      </li>
+                      <li class="invite-form-item">
+                          <label for="date" class="invite-form-label">Дата прибытия</label>
+                          <input name="date" type="date" id="date" placeholder="Date" class="form-date">
+                      </li>
+                      <li class="invite-form-item">
+                          <label for="nights" class="invite-form-label">Ночей</label>
+                          <input id="nights" name="nights" type="number" min="1" max="365" step="1" placeholder="Amount nights" class="form-amount">
+                      </li>
+                      <li class="invite-form-item">
+                          <label for="Tourists" class="invite-form-label">Туристы</label>
+                          <input name="tourists" type="number" id="Tourists" min="1" max="100" step="1" placeholder="Amount tourists" class="form-amount" required>
+                      </li>
+                      <li class="invite-form-item invite-form-button">
+                          <input type="submit" value="Отправить" class="invite-btn">
+                      </li>
+                  </ul>
+              </form>
+          </div>
+      </section>
+      <section class="section contacts">
+          <h2 class="section-title contacts-title">
+              Контакты
+          </h2>
+          <div class="contacts-banner">
+              <div class="info">
+                  <ul class="info-list">
+                      <li class="info-item">
+                          <h3 class="info-title">
+                              Адрес
+                          </h3>
+                          <div class="information">
+                              Москва, улица Юности, дом 5 строение 4, офис 2
+                          </div>
+                      </li>
+                      <li class="info-item">
+                          <h3 class="info-title">
+                              Телефоны
+                          </h3>
+                          <div class="information">
+                              <a href="#" class="phone-number">+7 499 535-64-34</a>
+                              <a href="#" class="phone-number">+7 495 005-05-44</a>
+                          </div>
+                      </li>
+                      <li class="info-item">
+                          <h3 class="info-title">
+                              Email
+                          </h3>
+                          <div class="information">
+                              <a href="#" class="mail">lg.oona@mail.ru</a>
+                              <p class="grey-text">по вопросам бронирования</p>
+                              <a href="#" class="mail">hotels.ln@mail.ru</a>
+                              <p class="grey-text">по вопросам сотрудничества</p>
+                          </div>
+                      </li>
+                      <li class="info-item">
+                          <h3 class="info-title">
+                              График
+                          </h3>
+                          <div class="information">
+                              Понедельник-пятница, с 10:00 до 19:00
+                          </div>
+                      </li>
+                  </ul>
+                  <button class="btn info-btn">
+                      Построить маршрут
+                  </button>
+              </div>
+              <div class="info-img">
+                  <img src="./img/Lagoona_photo.png" alt="Фото офис Лагуна">
+              </div>
+          </div>
+      </section>
+      <footer class="footer">
+          <div class="rules">
+              <p class="rules-text">© 2012–2020 Управляющая компания Объединённой сети «Лагуна Хотелс»</p>
+              <p class="rules-text">Представленная на сайте информация носит справочный характер и не является публичной офертой</p>
+              <a href="#" class="rules-link">Пользовательское соглашение</a>
+          </div>
+          <div class="footer-contacts">
+              <p class="adress">
+                  11710, улица Юности, дом 5 строение 4, офис 2
+              </p>
+              <a href="#" class="phone-number">+7 499 535-64-34</a>
+              <a href="#" class="phone-number phone-numbers">+7 495 005-05-44</a>
+              <a href="#" class="mail">lg.oona@mail.ru</a>
+              <a href="#" class="mail">hotels.ln@mail.ru</a>
+          </div>
+          <div class="social">
+              <a href="#" class="social-links"><img src="./img/social-1.svg" alt="trip-advisor"></a>
+              <a href="#" class="social-links"><img src="./img/social-2.svg" alt="ok"></a>
+              <a href="#" class="social-links"><img src="./img/social-3.svg" alt="vk"></a>
+          </div>
+      </footer>
   </div>
 </div>
 </body>

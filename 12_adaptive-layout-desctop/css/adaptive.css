@@ -1,0 +1,158 @@
+@media screen and (max-width: 1850px) {
+    .wrapper {
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 1675px) {
+    .slider__content {
+        width: 80%;
+    }
+
+    .advant__card__content {
+        background-size: auto;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+
+    .nav__list {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    .main{
+        margin-bottom: 80px;
+    }
+
+    .title {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 59px;
+    }
+
+    .header {
+        margin-bottom: 40px;
+    }
+
+    .header__content {
+        padding: 26px 0;
+    }
+
+    .burger__btn {
+        display: flex;
+    }
+
+    .logo__img {
+        max-width: 150px;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .slider {
+        padding: 160px 77px;
+        margin-bottom: 35px;
+    }
+
+    .slider__content {
+        width: 100%;
+    }
+
+    .slider__title {
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 73px;
+        margin-bottom: 16px;
+    }
+
+    .slider__descr {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 60px;
+    }
+
+    .about-us {
+        margin-bottom: 60px;
+    }
+
+    .advant {
+        grid-template-areas:
+                'A A'
+                'A A'
+                'B B'
+                'C C';
+        grid-template-columns: 1fr;
+        margin-bottom: 80px;
+    }
+
+    .banner {
+        min-height: 640px;
+    }
+
+    .advant__card {
+        padding: 65px 77px;
+    }
+
+    .advant__card__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 8px;
+    }
+
+    .advant__card__descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .stage__slider{
+        gap: 50px;
+        margin-bottom: 73px;
+    }
+
+    .stage__descr{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 45px;
+    }
+
+    .stage__img{
+        height: 103%;
+        object-fit: cover;
+    }
+
+    .questions--title{
+        padding: 32px 0;
+    }
+
+    .question__item{
+        padding: 30px 0;
+    }
+
+    .question__name{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+        max-width: 757px;
+    }
+
+    .form--btn{
+        padding: 19px 38px;
+    }
+
+    .footer__content {
+        grid-template-columns: 1fr 2.15fr;
+        gap: 132px;
+    }
+
+    .footer__descr {
+        display: none;
+    }
+}
