@@ -382,10 +382,11 @@ body {
 
 .stage__slider {
     display: none;
+    grid-template-columns: 1fr 1fr;
 }
 
 .stage__active {
-    display: flex;
+    display: grid;
     gap: 140px;
 }
 
@@ -491,7 +492,7 @@ body {
 }
 
 .stage__picture{
-    width: 50%;
+    width: 100%;
 }
 
 .stage__img {

@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 1150px) {
 
-    .main{
+    .main {
         margin-bottom: 80px;
     }
 
@@ -111,39 +111,39 @@
         line-height: 32px;
     }
 
-    .stage__slider{
+    .stage__slider {
         gap: 50px;
         margin-bottom: 73px;
     }
 
-    .stage__descr{
+    .stage__descr {
         font-weight: 400;
         font-size: 16px;
         line-height: 32px;
         margin-bottom: 45px;
     }
 
-    .stage__img{
+    .stage__img {
         height: 103%;
         object-fit: cover;
     }
 
-    .questions--title{
+    .questions--title {
         padding: 32px 0;
     }
 
-    .question__item{
+    .question__item {
         padding: 30px 0;
     }
 
-    .question__name{
+    .question__name {
         font-weight: 700;
         font-size: 20px;
         line-height: 32px;
         max-width: 757px;
     }
 
-    .form--btn{
+    .form--btn {
         padding: 19px 38px;
     }
 
@@ -154,5 +154,413 @@
 
     .footer__descr {
         display: none;
+    }
+}
+
+@media screen and (max-width: 870px) {
+
+    .header__content {
+        padding: 9px 0;
+    }
+
+    .slider {
+        border-radius: 24px;
+        padding: 160px 40px;
+    }
+
+    .slider__title {
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 61px;
+        margin-bottom: 16px;
+    }
+
+    .slider__descr {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 60px;
+    }
+
+    .banner {
+        border-radius: 24px;
+        min-height: 650px;
+    }
+
+    .banner__content {
+        padding: 34px 40px;
+        gap: 45px;
+        border-radius: 24px;
+    }
+
+    .about-us {
+        margin-bottom: 54px;
+    }
+
+    .advant{
+        margin-bottom: 77px;
+    }
+
+    .advant__card {
+        padding: 35px 45px;
+    }
+
+    .advant__card__content{
+        padding-left: 124px;
+        background-size: 20%;
+    }
+
+    .stage__slider{
+        gap: 34px;
+        margin-bottom: 39px;
+    }
+
+    .stage__btn{
+        justify-content: space-between;
+        gap: 0;
+        margin-bottom: 50px;
+    }
+
+    .stages__title{
+        margin-bottom: 48px;
+    }
+
+    .stage__active{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .stage__img{
+        border-radius: 24px;
+        max-height: 284px;
+    }
+
+    br{
+        display: none;
+    }
+
+    .accordeon{
+        gap: 40px;
+    }
+
+    .footer__content{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .main{
+        margin-bottom: 110px;
+    }
+
+    .footer__form{
+        width: 81%;
+        padding-top: 50px;
+    }
+
+    textarea{
+        height: 150px;
+        margin-bottom: 7px;
+    }
+
+    .footer__nav__list{
+        display: none;
+    }
+
+    .footer__logo{
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+
+    .wrapper{
+        margin: 0 15px;
+    }
+
+    .header__content{
+        padding: 16px 0;
+    }
+
+    .logo__img{
+        max-width: 110px;
+    }
+
+    .header{
+        margin-bottom: 28px;
+    }
+
+    .slider{
+        padding: 60px 22px;
+        border-radius: 16px;
+        margin-bottom: 60px;
+    }
+
+    .slider__content{
+        align-items: center;
+    }
+
+    .slider__title{
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+
+    .slider__descr{
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        margin-bottom: 34px;
+    }
+
+    .slider__btn{
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 13px 28px;
+        border-radius: 8px;
+    }
+
+    .bullit{
+        left: 110px;
+        bottom: 16px;
+    }
+
+    .bullit__item{
+        width: 10px;
+        height: 10px;
+    }
+
+    .about-us{
+        margin-bottom: 13px;
+    }
+
+    .about-us__title{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .about-us__descr{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .banner{
+        min-height: 400px;
+        border-radius: 16px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+    }
+
+    .banner__content{
+        flex-direction: column;
+        justify-content: right;
+        align-items: flex-start;
+        padding: 0;
+        background-color: transparent;
+        gap: 12px;
+    }
+
+    .banner__descr{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        color: #000000;
+
+    }
+
+    .banner__btn{
+        border-radius: 8px;
+        padding: 10px 42px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #FF9900;
+    }
+
+    .advant{
+        margin-bottom: 62px;
+    }
+
+    .advant__card{
+        border: none;
+        padding: 0;
+    }
+
+    .grid-2 .advant__card__content{
+        background-image: url("../svg/ab_icon_1.svg");
+    }
+
+    .grid-3 .advant__card__content{
+        background-image: url("../svg/ab_icon_2.svg");
+    }
+
+    .advant__card__content{
+        padding-top: 60px;
+        padding-left: 0;
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: 22%;
+    }
+
+    .advant__card__title{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 4px;
+    }
+
+    .advant__card__descr{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .stages__title{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 20px;
+    }
+
+    .stage__btn{
+        margin-bottom: 16px;
+    }
+
+
+    .stage__btn-link{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .stage__img{
+        border-radius: 16px;
+    }
+
+    .stage__title{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .stage__slider{
+        gap: 18px;
+        margin-bottom: 43px;
+    }
+
+    .stage__descr{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        margin-bottom: 25px;
+    }
+
+    .stage__btns{
+        display: flex;
+    }
+
+    .stage__more{
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        padding: 11px 44px;
+        border-radius: 8px;
+        margin-right: 9px;
+    }
+
+    .stage__contract{
+        padding: 11px 32px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .question__title{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        padding: 16px 0;
+    }
+
+    .accordeon{
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    .question__name{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .main{
+        margin-bottom: 57px;
+    }
+
+    .footer__content{
+        align-items: center;
+    }
+
+    .footer__form{
+        width: 100%;
+        padding-top: 32px;
+    }
+
+    .footer--form{
+        gap: 22px;
+    }
+
+    .form--title{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    input, textarea{
+        padding: 14px 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 32px;
+    }
+
+    .form--btn{
+        padding: 12px 28px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        border-radius: 8px;
+    }
+
+    .footer__nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 33px;
+        padding-bottom: 20px;
+    }
+
+    .footer__logo{
+        max-width: 131px;
+        margin-bottom: 6px;
+    }
+
+    .social{
+        gap: 16px;
+    }
+
+    .social__svg{
+        width: 40px;
     }
 }
