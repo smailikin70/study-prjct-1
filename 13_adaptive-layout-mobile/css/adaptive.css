@@ -1,0 +1,623 @@
+
+@media screen and (max-width: 1775px) {
+    .wrapper {
+        margin: 0 50px;
+    }
+
+    .slider__content {
+        width: 80%;
+    }
+
+    .advant__card__content {
+        background-size: auto;
+    }
+}
+
+@media screen and (max-width: 1540px) {
+
+    .wrapper {
+        margin: 0 50px;
+    }
+
+    .nav__list {
+        gap: 50px;
+    }
+
+
+    .questions--title {
+        padding: 32px 0;
+    }
+
+    .question__item {
+        padding: 30px 0;
+    }
+
+    .banner__content{
+        gap: 20px;
+    }
+
+    .question__name {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 32px;
+        max-width: 757px;
+    }
+
+    .form--btn {
+        padding: 19px 38px;
+    }
+
+    .footer__descr {
+        display: none;
+    }
+
+
+    .footer__content {
+        grid-template-columns: 1fr 2.15fr;
+        gap: 132px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+
+    .main {
+        margin-bottom: 80px;
+    }
+
+    .title {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 59px;
+    }
+
+    .header {
+        margin-bottom: 40px;
+    }
+
+    .header__content {
+        padding: 26px 0;
+    }
+
+    .burger__btn {
+        display: flex;
+    }
+
+    .logo__img {
+        max-width: 150px;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .slider {
+        padding: 160px 77px;
+        margin-bottom: 35px;
+    }
+
+    .slider__content {
+        width: 100%;
+    }
+
+    .slider__title {
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 73px;
+        margin-bottom: 16px;
+    }
+
+    .slider__descr {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 60px;
+    }
+
+    .about-us {
+        margin-bottom: 60px;
+    }
+
+    .advant {
+        grid-template-areas:
+                'A A'
+                'A A'
+                'B B'
+                'C C';
+        grid-template-columns: 1fr;
+        margin-bottom: 77px;
+    }
+
+    .banner {
+        min-height: 640px;
+    }
+
+    .advant__card {
+        padding: 65px 77px;
+    }
+
+    .advant__card__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 8px;
+    }
+
+    .advant__card__descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .stage__slider {
+        gap: 50px;
+        margin-bottom: 68px;
+    }
+
+    .stage__descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 45px;
+    }
+
+    .stage__btn{
+        margin-bottom: 50px;
+    }
+
+    .stage__img {
+        height: 103%;
+        object-fit: cover;
+    }
+
+}
+
+@media screen and (max-width: 1010px) {
+
+    .header__content {
+        padding: 9px 0;
+    }
+
+    .slider {
+        border-radius: 24px;
+        padding: 160px 40px;
+    }
+
+    .slider__title {
+        font-weight: 800;
+        font-size: 50px;
+        line-height: 61px;
+        margin-bottom: 16px;
+    }
+
+    .slider__descr {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 60px;
+    }
+
+    .banner {
+        border-radius: 24px;
+        min-height: 650px;
+    }
+
+    .banner__img {
+        border-radius: 24px;
+    }
+
+    .banner__content {
+        padding: 34px 40px;
+        gap: 45px;
+        border-radius: 24px;
+    }
+
+    .banner__btn{
+        padding: 17px 35px;
+    }
+
+    .about-us {
+        margin-bottom: 54px;
+    }
+
+    .advant {
+        margin-bottom: 80px;
+    }
+
+    .advant__card {
+        border-right: 24px;
+        padding: 34px 45px;
+    }
+
+    .advant__card__content {
+        padding-left: 190px;
+        background-size: 20%;
+    }
+
+    .stage__slider {
+        gap: 35px;
+        margin-bottom: 38px;
+    }
+
+    .stage__btn {
+        justify-content: space-between;
+        gap: 0;
+        margin-bottom: 50px;
+    }
+
+    .stages__title {
+        margin-bottom: 48px;
+    }
+
+    .stage__active {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .stage__picture{
+        padding-top: 0;
+    }
+
+    .stage__img {
+        border-radius: 24px;
+        max-height: 284px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .accordeon {
+        gap: 40px;
+    }
+
+    .footer__content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .main {
+        margin-bottom: 110px;
+    }
+
+    .footer__form {
+        width: 81%;
+        padding-top: 50px;
+    }
+
+    textarea {
+        height: 150px;
+        margin-bottom: 7px;
+    }
+
+    .footer__nav__list {
+        display: none;
+    }
+
+    .footer__logo {
+        margin-bottom: 12px;
+    }
+}
+
+
+
+@media screen and (max-width: 910px) {
+    .advant__card__content {
+        padding-left: 123px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+
+    .wrapper {
+        margin: 0 15px;
+    }
+
+    .header__content {
+        padding: 16px 0;
+    }
+
+    .logo__img {
+        max-width: 110px;
+    }
+
+    .header {
+        margin-bottom: 28px;
+    }
+
+    .slider {
+        padding: 60px 22px;
+        border-radius: 16px;
+        margin-bottom: 60px;
+    }
+
+    .slider__content {
+        align-items: center;
+    }
+
+    .slider__title {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+
+    .slider__descr {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        margin-bottom: 34px;
+    }
+
+    .slider__btn {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 13px 28px;
+        border-radius: 8px;
+    }
+
+    .bullit {
+        left: 110px;
+        bottom: 16px;
+    }
+
+    .bullit__item {
+        width: 10px;
+        height: 10px;
+    }
+
+    .about-us {
+        margin-bottom: 13px;
+    }
+
+    .about-us__title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .about-us__descr {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        min-height: 390px;
+        border-radius: 16px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+    }
+
+    .banner__img {
+        position: relative;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 16px;
+        margin-bottom: 8px;
+    }
+
+    .banner__content {
+        flex-direction: column;
+        justify-content: right;
+        align-items: flex-start;
+        padding: 0;
+        background-color: transparent;
+        gap: 12px;
+    }
+
+    .banner__descr {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        color: #000000;
+
+    }
+
+    .banner__btn {
+        border-radius: 8px;
+        padding: 10px 42px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        color: #FF9900;
+    }
+
+    .advant {
+        margin-bottom: 62px;
+    }
+
+    .advant__card {
+        border: none;
+        padding: 0;
+    }
+
+    .grid-2 .advant__card__content {
+        background-image: url("../svg/ab_icon_1.svg");
+    }
+
+    .grid-3 .advant__card__content {
+        background-image: url("../svg/ab_icon_2.svg");
+    }
+
+    .advant__card__content {
+        padding-top: 100px;
+        padding-left: 0;
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: 22%;
+    }
+
+    .advant__card__title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 4px;
+    }
+
+    .advant__card__descr {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .stages__title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 20px;
+    }
+
+    .stage__btn {
+        margin-bottom: 16px;
+    }
+
+
+    .stage__btn-link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .stage__img {
+        border-radius: 16px;
+    }
+
+    .stage__title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .stage__slider {
+        gap: 18px;
+        margin-bottom: 43px;
+    }
+
+    .stage__descr {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        margin-bottom: 25px;
+    }
+
+    .stage__btns {
+        display: flex;
+    }
+
+    .stage__more {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        padding: 11px 44px;
+        border-radius: 8px;
+        margin-right: 9px;
+    }
+
+    .stage__contract {
+        padding: 11px 32px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .question__title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        padding: 16px 0;
+    }
+
+    .accordeon {
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+    .accordeon__btn {
+        flex-basis: 30px;
+    }
+
+    .question__name {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .main {
+        margin-bottom: 57px;
+    }
+
+    .footer__content {
+        align-items: center;
+    }
+
+    .footer__form {
+        width: 100%;
+        padding-top: 32px;
+    }
+
+    .footer--form {
+        gap: 22px;
+    }
+
+    .form--title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    input, textarea {
+        padding: 14px 20px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 32px;
+    }
+
+    .form--btn {
+        padding: 12px 28px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        border-radius: 8px;
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 33px;
+        padding-bottom: 20px;
+    }
+
+    .footer__logo {
+        max-width: 131px;
+        margin-bottom: 6px;
+    }
+
+    .social {
+        gap: 16px;
+    }
+
+    .social__svg {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .advant__card__content {
+        padding-top: 60px;
+    }
+
+}
