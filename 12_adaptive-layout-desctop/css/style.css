@@ -46,8 +46,8 @@ body {
     max-height: 100px;
     margin: 0 auto;
     background: #FFFFFF;
-    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
-    border-radius: 0px 0px 32px 32px;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 32px 32px;
     margin-bottom: 50px;
 }
 
@@ -117,17 +117,17 @@ body {
     height: 23px;
 }
 
-.burger__btn-item{
+.burger__btn-item {
     /*position: absolute;*/
     width: 100%;
     border: 2px #000000 solid;
 }
 
-.burger__btn-item:first-child{
+.burger__btn-item:first-child {
 
 }
 
-.burger__btn-item:last-child{
+.burger__btn-item:last-child {
 }
 
 .logo__img {
@@ -290,16 +290,28 @@ body {
 }
 
 .banner {
+    position: relative;
     display: flex;
     align-items: flex-end;
     min-height: 622px;
     border-radius: 32px;
-    background: url("../img/about-img.jpg");
-    background-position: center;
-    background-size: cover;
+    /*background: url("../img/about-img.jpg");*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+}
+
+
+.banner__img {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    object-fit: cover;
 }
 
 .banner__content {
+    z-index: 5;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -342,7 +354,7 @@ body {
 }
 
 .advant__card {
-    padding: 60px 65px;
+    padding: 64px 65px;
     border: 1px solid #CACACA;
     border-radius: 32px;
 }
@@ -383,11 +395,11 @@ body {
 .stage__slider {
     display: none;
     grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 
 .stage__active {
     display: grid;
-    gap: 140px;
 }
 
 .stages__title {
@@ -428,7 +440,7 @@ body {
 .stage__slider {
     width: 100%;
     min-height: 460px;
-    margin-bottom: 82px;
+    margin-bottom: 76px;
 }
 
 .stage__content {
@@ -491,8 +503,10 @@ body {
     border-color: #000000;
 }
 
-.stage__picture{
+.stage__picture {
+    padding-top: 10px;
     width: 100%;
+    height: 97%;
 }
 
 .stage__img {
@@ -531,6 +545,7 @@ body {
     fill: #CACACA;
     transition: fill 0.1s ease-in-out, transform 0.1s ease-in-out;
     transform: rotate(45deg);
+    flex-shrink: 0;
 }
 
 .accordeon {
@@ -605,7 +620,6 @@ body {
 /*-------------------------*/
 
 .footer {
-
     background-color: black;
 }
 
