@@ -132,7 +132,6 @@
                     </p>
                 </div>
             </div>
-            </ul>
         </div>
         <div class="section stages" id="stages">
             <h2 class="title stages__title">
@@ -140,27 +139,27 @@
             </h2>
             <ul class="stage__btn">
                 <li class="stage__btn-item">
-                    <button class="stage__btn-link stage__btn-active">
+                    <button class="stage__btn-link stage__btn-active" data-path="one">
                         1 шаг
                     </button>
                 </li>
                 <li class="stage__btn-item">
-                    <button class="stage__btn-link">
+                    <button class="stage__btn-link" data-path="two">
                         2 шаг
                     </button>
                 </li>
                 <li class="stage__btn-item">
-                    <button class="stage__btn-link">
+                    <button class="stage__btn-link" data-path="three">
                         3 шаг
                     </button>
                 </li>
                 <li class="stage__btn-item">
-                    <button class="stage__btn-link">
+                    <button class="stage__btn-link" data-path="four">
                         4 шаг
                     </button>
                 </li>
             </ul>
-            <div class="stage__slider stage__active">
+            <div class="stage__slider stage__active" data-target="one">
                 <div class="stage__content">
                     <div class="stage__title">
                         Проводим консультацию
@@ -186,7 +185,7 @@
                     <img src="./img/hiw-1.jpg" alt="" class="stage__img">
                 </div>
             </div>
-            <div class="stage__slider">
+            <div class="stage__slider" data-target="two">
                 <div class="stage__content">
                     <div class="stage__title">
                         Составляем смету
@@ -208,7 +207,7 @@
                     <img src="./img/hiw-2.jpg" alt="" class="stage__img">
                 </div>
             </div>
-            <div class="stage__slider">
+            <div class="stage__slider" data-target="three">
                 <div class="stage__content">
                     <div class="stage__title">
                         Привлекаем подрядчиков
@@ -232,7 +231,7 @@
                     <img src="./img/hiw-3.jpg" alt="" class="stage__img">
                 </div>
             </div>
-            <div class="stage__slider">
+            <div class="stage__slider" data-target="four">
                 <div class="stage__content">
                     <div class="stage__title">
                         Инспектируем все этапы работ
@@ -262,9 +261,9 @@
             <ul class="question__list">
                 <li class="question__item">
                     <button class="accordeon">
-                        <p class="question__name">
+                        <span class="question__name">
                             Из чего формируется конечная стоимость проекта?
-                        </p>
+                        </span>
                         <svg class="accordeon__btn" width="50" height="50" viewBox="0 0 50 50" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <ellipse cx="25" cy="25" rx="25" ry="25"/>
@@ -276,9 +275,9 @@
                 </li>
                 <li class="question__item">
                     <button class="accordeon">
-                        <p class="question__name">
+                        <span class="question__name">
                             У меня есть свой проект. Сможем ли мы его доработать / реализовать?
-                        </p>
+                        </span>
                         <svg class="accordeon__btn" width="50" height="50" viewBox="0 0 50 50" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <ellipse cx="25" cy="25" rx="25" ry="25"/>
@@ -290,9 +289,9 @@
                 </li>
                 <li class="question__item">
                     <button class="accordeon">
-                        <p class="question__name">
+                        <span class="question__name">
                             Я выбираю между разными компаниями. В чём ваше отличие?
-                        </p>
+                        </span>
                         <svg class="accordeon__btn" width="50" height="50" viewBox="0 0 50 50" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <ellipse cx="25" cy="25" rx="25" ry="25"/>
@@ -304,9 +303,9 @@
                 </li>
                 <li class="question__item">
                     <button class="accordeon">
-                        <p class="question__name">
+                        <span class="question__name">
                             Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?
-                        </p>
+                        </span>
                         <svg class="accordeon__btn" width="50" height="50" viewBox="0 0 50 50" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <ellipse cx="25" cy="25" rx="25" ry="25"/>
@@ -318,9 +317,9 @@
                 </li>
                 <li class="question__item">
                     <button class="accordeon">
-                        <p class="question__name">
+                        <span class="question__name">
                             Могу ли я вернуть деньги на каком-либо из этапов работ?
-                        </p>
+                        </span>
                         <svg class="accordeon__btn" width="50" height="50" viewBox="0 0 50 50" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <ellipse cx="25" cy="25" rx="25" ry="25"/>
