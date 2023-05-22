@@ -4,6 +4,17 @@ let menuLinks = menu.querySelectorAll('.nav__link');
 let tabsBtn = document.querySelectorAll('.stage__btn-link');
 let tabsItem = document.querySelectorAll('.stage__slider');
 
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    autoplay: true,
+});
+
+new Accordion('.accordion-container');
+
 burger.addEventListener('click',
 
     function () {

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
     <link rel="stylesheet" href="./css/normolize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/adaptive.css">
@@ -54,7 +56,21 @@
 </header>
 <main class="main">
     <div class="wrapper">
-        <div class="slider slider-active">
+        <div class="slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/banner-1.jpg" alt="" class="slider__img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/banner-2.jpg" alt="" class="slider__img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/banner-3.jpg" alt="" class="slider__img">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
             <div class="slider__content">
                 <h1 class="slider__title">
                     Проектные решения любой сложности
@@ -66,20 +82,6 @@
                 <button class="btn slider__btn">
                     Заказать расчёт
                 </button>
-            </div>
-            <div class="bullit">
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
-                     class="bullit__item bullit__item-active">
-                    <circle cx="7.5" cy="7.5" r="7.5"/>
-                </svg>
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
-                     class="bullit__item">
-                    <circle cx="7.5" cy="7.5" r="7.5"/>
-                </svg>
-                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"
-                     class="bullit__item">
-                    <circle cx="7.5" cy="7.5" r="7.5"/>
-                </svg>
             </div>
         </div>
         <div class="section about-us" id="about-us">
@@ -165,16 +167,16 @@
                         Проводим консультацию
                     </div>
                     <div class="stage__descr">
-                        Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках
+                        Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках
                         спецификации современных стандартов, некоторые особенности внутренней политики будут объективно
                         рассмотрены соответствующими инстанциями.
                         <br>
-                        А также представители современных социальных резервов, инициированные исключительно
+                        А также представители современных социальных резервов, инициированные исключительно
                         синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей
-                        картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой
+                        картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой
                         серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство,
-                        нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные
-                        выводы, разумеется, призваны к ответу.
+                        нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные
+                        выводы, разумеется, призваны к ответу.
                     </div>
                     <div class="stage__btns">
                         <a href="#" class="btn stage__more">Подробнее</a>
@@ -258,78 +260,108 @@
             <h2 class="title question__title">
                 Часто задаваемые вопросы
             </h2>
-            <ul class="question__list">
-                <li class="question__item">
-                    <button class="accordeon">
-                        <span class="question__name">
-                            Из чего формируется конечная стоимость проекта?
-                        </span>
-                        <svg class="accordeon__btn" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <ellipse cx="25" cy="25" rx="25" ry="25"/>
-                            <path class="accordeon__btn__stroke" fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M25.5001 23.8737L36.1471 13.2267L36.7734 13.853L26.1264 24.5L31.7413 30.1149L36.7734 35.147L36.1471 35.7733L25.5001 25.1263L14.8531 35.7733L14.2268 35.147L24.8738 24.5L14.2268 13.853L14.8531 13.2267L25.5001 23.8737Z"
-                            />
-                        </svg>
-                    </button>
-                </li>
-                <li class="question__item">
-                    <button class="accordeon">
-                        <span class="question__name">
-                            У меня есть свой проект. Сможем ли мы его доработать / реализовать?
-                        </span>
-                        <svg class="accordeon__btn" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <ellipse cx="25" cy="25" rx="25" ry="25"/>
-                            <path class="accordeon__btn__stroke" fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M25.5001 23.8737L36.1471 13.2267L36.7734 13.853L26.1264 24.5L31.7413 30.1149L36.7734 35.147L36.1471 35.7733L25.5001 25.1263L14.8531 35.7733L14.2268 35.147L24.8738 24.5L14.2268 13.853L14.8531 13.2267L25.5001 23.8737Z"
-                            />
-                        </svg>
-                    </button>
-                </li>
-                <li class="question__item">
-                    <button class="accordeon">
-                        <span class="question__name">
-                            Я выбираю между разными компаниями. В чём ваше отличие?
-                        </span>
-                        <svg class="accordeon__btn" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <ellipse cx="25" cy="25" rx="25" ry="25"/>
-                            <path class="accordeon__btn__stroke" fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M25.5001 23.8737L36.1471 13.2267L36.7734 13.853L26.1264 24.5L31.7413 30.1149L36.7734 35.147L36.1471 35.7733L25.5001 25.1263L14.8531 35.7733L14.2268 35.147L24.8738 24.5L14.2268 13.853L14.8531 13.2267L25.5001 23.8737Z"
-                            />
-                        </svg>
-                    </button>
-                </li>
-                <li class="question__item">
-                    <button class="accordeon">
-                        <span class="question__name">
-                            Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?
-                        </span>
-                        <svg class="accordeon__btn" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <ellipse cx="25" cy="25" rx="25" ry="25"/>
-                            <path class="accordeon__btn__stroke" fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M25.5001 23.8737L36.1471 13.2267L36.7734 13.853L26.1264 24.5L31.7413 30.1149L36.7734 35.147L36.1471 35.7733L25.5001 25.1263L14.8531 35.7733L14.2268 35.147L24.8738 24.5L14.2268 13.853L14.8531 13.2267L25.5001 23.8737Z"
-                            />
-                        </svg>
-                    </button>
-                </li>
-                <li class="question__item">
-                    <button class="accordeon">
-                        <span class="question__name">
-                            Могу ли я вернуть деньги на каком-либо из этапов работ?
-                        </span>
-                        <svg class="accordeon__btn" width="50" height="50" viewBox="0 0 50 50" fill="none"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <ellipse cx="25" cy="25" rx="25" ry="25"/>
-                            <path class="accordeon__btn__stroke" fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M25.5001 23.8737L36.1471 13.2267L36.7734 13.853L26.1264 24.5L31.7413 30.1149L36.7734 35.147L36.1471 35.7733L25.5001 25.1263L14.8531 35.7733L14.2268 35.147L24.8738 24.5L14.2268 13.853L14.8531 13.2267L25.5001 23.8737Z"
-                            />
-                        </svg>
-                    </button>
-                </li>
-            </ul>
+            <div class="accordion-container">
+                <div class="ac">
+                    <div class="ac-header">
+                        <button type="button" class="ac-trigger">Из чего формируется конечная стоимость проекта?
+                            <svg class="x-btn" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="25" cy="25" rx="25" ry="25"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M25.5001 23.8737L36.1471 13.2267L36.7734 13.853L26.1264 24.5L31.7413 30.1149L36.7734 35.147L36.1471 35.7733L25.5001 25.1263L14.8531 35.7733L14.2268 35.147L24.8738 24.5L14.2268 13.853L14.8531 13.2267L25.5001 23.8737Z"
+                                      fill="black"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="ac-panel">
+                        <p class="ac-text">Являясь всего лишь частью общей картины, непосредственные участники
+                            технического прогресса призывают нас 
+                            к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы.
+                            Но высококачественный прототип будущего проекта является качественно новой ступенью
+                            первоочередных требований. А ещё некоторые особенности внутренней политики, которые
+                            представляют собой яркий пример континентально-европейского типа политической культуры,
+                            будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные
+                            признаки победы институционализации призывают нас к новым свершениям, которые, в свою
+                            очередь, должны быть указаны как претенденты на роль ключевых факторов.
+                            <br><br>
+                            Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть
+                            призваны к ответу. Явные признаки победы институционализации набирают популярность среди
+                            определённых слоёв населения,
+                            а значит, должны быть объединены в целые кластеры себе подобных. Банальные,
+                            но неопровержимые выводы,
+                            а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь,
+                            должны быть представлены в исключительно положительном свете.</p>
+                    </div>
+                </div>
+
+                <div class="ac">
+                    <div class="ac-header">
+                        <button type="button" class="ac-trigger">У меня есть свой проект. Сможем ли мы его доработать /
+                            реализовать?
+                            <svg class="x-btn" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="25" cy="25" rx="25" ry="25"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M25.5001 23.8737L36.1471 13.2267L36.7734 13.853L26.1264 24.5L31.7413 30.1149L36.7734 35.147L36.1471 35.7733L25.5001 25.1263L14.8531 35.7733L14.2268 35.147L24.8738 24.5L14.2268 13.853L14.8531 13.2267L25.5001 23.8737Z"
+                                      fill="black"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="ac-panel">
+                        <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+
+                <div class="ac">
+                    <div class="ac-header">
+                        <button type="button" class="ac-trigger">Я выбираю между разными компаниями. В чём ваше отличие?
+                            <svg class="x-btn" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="25" cy="25" rx="25" ry="25"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M25.5001 23.8737L36.1471 13.2267L36.7734 13.853L26.1264 24.5L31.7413 30.1149L36.7734 35.147L36.1471 35.7733L25.5001 25.1263L14.8531 35.7733L14.2268 35.147L24.8738 24.5L14.2268 13.853L14.8531 13.2267L25.5001 23.8737Z"
+                                      fill="black"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="ac-panel">
+                        <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="ac">
+                    <div class="ac-header">
+                        <button type="button" class="ac-trigger">Могу ли я делегировать вам работу / согласование
+                            с подрядчиком / организацией?
+                            <svg class="x-btn" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="25" cy="25" rx="25" ry="25"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M25.5001 23.8737L36.1471 13.2267L36.7734 13.853L26.1264 24.5L31.7413 30.1149L36.7734 35.147L36.1471 35.7733L25.5001 25.1263L14.8531 35.7733L14.2268 35.147L24.8738 24.5L14.2268 13.853L14.8531 13.2267L25.5001 23.8737Z"
+                                      fill="black"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="ac-panel">
+                        <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="ac">
+                    <div class="ac-header">
+                        <button type="button" class="ac-trigger">Могу ли я вернуть деньги на каком-либо из этапов работ?
+                            <svg class="x-btn" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="25" cy="25" rx="25" ry="25"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M25.5001 23.8737L36.1471 13.2267L36.7734 13.853L26.1264 24.5L31.7413 30.1149L36.7734 35.147L36.1471 35.7733L25.5001 25.1263L14.8531 35.7733L14.2268 35.147L24.8738 24.5L14.2268 13.853L14.8531 13.2267L25.5001 23.8737Z"
+                                      fill="black"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="ac-panel">
+                        <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </main>
@@ -340,7 +372,7 @@
                 <img src="./img/footer-logo.png" alt="" class="footer__logo">
                 <ul class="footer__nav__list">
                     <li class="footer__nav__item">
-                        <a href="#about-us" class="nav__link">О нас</a>
+                        <a href="#about-us" class="nav__link">О нас</a>
                     </li>
                     <li class="footer__nav__item">
                         <a href="#projects" class="nav__link">Проекты</a>
@@ -362,11 +394,13 @@
                     </li>
                 </ul>
                 <div class="social">
-                    <a href="http://instagram.com" class="social__link" target="_blank">
-                        <svg class="social__svg" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M25.7054 19.9812C25.7054 22.4546 27.7105 24.4598 30.1838 24.4598C32.6572 24.4598 34.6623 22.4546 34.6623 19.9812C34.6623 17.5079 32.6572 15.5028 30.1838 15.5028C27.7105 15.5028 25.7054 17.5079 25.7054 19.9812Z"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M30 60C46.5686 60 60 46.5685 60 30C60 13.4315 46.5686 0 30 0C13.4314 0 0 13.4315 0 30C0 46.5685 13.4314 60 30 60ZM19.35 19.9811C19.35 13.9978 24.2004 9.14729 30.1838 9.14729C36.1673 9.14729 41.0176 13.9978 41.0176 19.9811C41.0176 25.9645 36.1673 30.8154 30.1838 30.8154C24.2004 30.8154 19.35 25.9645 19.35 19.9811ZM41.0823 36.3881C40.9448 36.4983 38.3457 38.5522 34.0085 39.4358L40.5554 45.9243C41.7067 47.0738 41.7081 48.9389 40.5586 50.0902C39.4091 51.2414 37.5444 51.2432 36.3927 50.0935L30.0368 43.904L24.2639 50.0536C23.6859 50.6532 22.9149 50.9547 22.1431 50.9547C21.407 50.9547 20.6703 50.6808 20.0986 50.1296C18.9274 49.0003 18.8935 47.1355 20.0228 45.9643L26.2369 39.4701C21.7782 38.6073 19.0718 36.4998 18.9324 36.3881C17.6633 35.3702 17.4594 33.5163 18.4772 32.247C19.4949 30.9778 21.3487 30.7739 22.6182 31.7916C22.645 31.8133 25.4756 33.9398 30.0366 33.9429C34.5977 33.9398 37.3698 31.8133 37.3966 31.7916C38.666 30.7739 40.5198 30.9778 41.5375 32.247C42.5553 33.5163 42.3515 35.3702 41.0823 36.3881Z" />
-                    </svg>
+                    <a href="https://instagram.com" class="social__link" target="_blank">
+                        <svg class="social__svg" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25.7054 19.9812C25.7054 22.4546 27.7105 24.4598 30.1838 24.4598C32.6572 24.4598 34.6623 22.4546 34.6623 19.9812C34.6623 17.5079 32.6572 15.5028 30.1838 15.5028C27.7105 15.5028 25.7054 17.5079 25.7054 19.9812Z"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M30 60C46.5686 60 60 46.5685 60 30C60 13.4315 46.5686 0 30 0C13.4314 0 0 13.4315 0 30C0 46.5685 13.4314 60 30 60ZM19.35 19.9811C19.35 13.9978 24.2004 9.14729 30.1838 9.14729C36.1673 9.14729 41.0176 13.9978 41.0176 19.9811C41.0176 25.9645 36.1673 30.8154 30.1838 30.8154C24.2004 30.8154 19.35 25.9645 19.35 19.9811ZM41.0823 36.3881C40.9448 36.4983 38.3457 38.5522 34.0085 39.4358L40.5554 45.9243C41.7067 47.0738 41.7081 48.9389 40.5586 50.0902C39.4091 51.2414 37.5444 51.2432 36.3927 50.0935L30.0368 43.904L24.2639 50.0536C23.6859 50.6532 22.9149 50.9547 22.1431 50.9547C21.407 50.9547 20.6703 50.6808 20.0986 50.1296C18.9274 49.0003 18.8935 47.1355 20.0228 45.9643L26.2369 39.4701C21.7782 38.6073 19.0718 36.4998 18.9324 36.3881C17.6633 35.3702 17.4594 33.5163 18.4772 32.247C19.4949 30.9778 21.3487 30.7739 22.6182 31.7916C22.645 31.8133 25.4756 33.9398 30.0366 33.9429C34.5977 33.9398 37.3698 31.8133 37.3966 31.7916C38.666 30.7739 40.5198 30.9778 41.5375 32.247C42.5553 33.5163 42.3515 35.3702 41.0823 36.3881Z"/>
+                        </svg>
                     </a>
                     <a href="https://vk.com" class="social__link" target="_blank">
                         <svg class="social__svg" width="60" height="60" viewBox="0 0 60 60" fill="none"
@@ -383,7 +417,7 @@
                         Оставить заявку
                     </h3>
                     <label for="name">ФИО</label>
-                    <input type="text" name="name" id="name" placeholder="Фамилия, имя и отчество*">
+                    <input type="text" name="name" id="name" placeholder="Фамилия, имя и отчество*">
                     <label for="mail">Email</label>
                     <input type="email" name="mail" id="mail" placeholder="Email*">
                     <label for="message">Напишите ваше сообщение</label>
@@ -400,13 +434,15 @@
                     Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого
                     факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели
                     развития. Таким образом, консультация
-                    с широким активом обеспечивает широкому кругу (специалистов) участие
-                    в формировании стандартных подходов.
+                    с широким активом обеспечивает широкому кругу (специалистов) участие
+                    в формировании стандартных подходов.
                 </p>
             </div>
         </div>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
 <script src="./js/script.js"></script>
 </body>
 </html>
