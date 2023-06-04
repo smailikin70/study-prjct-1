@@ -74,4 +74,4 @@ tabsBtn.forEach(function (element) {
     });
     document.querySelector(`[data-target="${path}"]`).classList.add('stage__active');
   })
-})
+});
