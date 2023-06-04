@@ -7,6 +7,7 @@ const search = document.querySelector('.search__line');
 const searchbtn = document.querySelector('.search__btn');
 const searchexit = document.querySelector('.search__exit');
 
+
 const swiper = new Swiper('.swiper', {
   loop: true,
   pagination: {
