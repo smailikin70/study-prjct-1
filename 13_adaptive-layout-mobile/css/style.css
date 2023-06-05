@@ -69,6 +69,7 @@ body {
     transition: background 0.3s ease-in-out;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -116,6 +117,7 @@ body {
     align-items: center;
     width: 30px;
     height: 23px;
+    cursor: pointer;
 }
 
 .burger__btn-item {
@@ -201,46 +203,47 @@ body {
 }
 
 .search{
-  position: relative;
+    position: relative;
 }
 
 .search__line{
-  z-index: 10;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: #fff;
-  border-radius: 24px;
-  padding: 15px;
-  padding-left: 40px;
-  margin: 0;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+    z-index: 10;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 15px;
+    padding-left: 40px;
+    margin: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
 }
 
 .search__active{
-  display: flex;
+    display: flex;
 }
 
 .search__input{
-  min-width: 400px;
-  position: relative;
-  background-color: transparent;
-  border-bottom: 1px #cacaca solid;
-  border-radius: 0;
-  padding: 0;
-  margin: 0;
+    min-width: 400px;
+    position: relative;
+    background-color: transparent;
+    border-bottom: 1px #cacaca solid;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .find__btn__svg{
-  stroke: #FF9900;
+    stroke: #FF9900;
 }
 
 .search__btn__svg {
     stroke: #333333;
+    cursor: pointer;
 }
 
 .search__btn:hover .search__btn__svg {
@@ -283,7 +286,7 @@ body {
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-   margin: 10px;
+    margin: 10px;
 }
 
 
@@ -511,6 +514,7 @@ body {
     line-height: 22px;
     color: #000000;
     transition: color 0.1s ease-in-out, outline 0.1s ease-in-out;
+    cursor: pointer;
 }
 
 .stage__btn-link:hover {
