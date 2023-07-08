@@ -35,6 +35,11 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 0;
 }
 
+a:focus, button:focus{
+  outline: 1px #FF9900 solid;
+  outline-offset: 10px;
+}
+
 /*///////////////////////////*/
 
 body {
@@ -237,6 +242,10 @@ body {
     margin: 0;
 }
 
+.search__btn:focus{
+  outline: 1px #FF9900 solid;
+}
+
 .find__btn__svg{
     stroke: #FF9900;
 }
@@ -248,10 +257,6 @@ body {
 
 .search__btn:hover .search__btn__svg {
     stroke: #FF9900;
-}
-
-.search__btn:focus {
-    outline: #FF9900;
 }
 
 .search__btn:active .search__btn__svg {
