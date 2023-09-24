@@ -27,6 +27,7 @@ ul, li {
         .container {
             max-width: 1110px;
             margin: 0 auto;
+            padding: 0;
 
 
             .header__content {

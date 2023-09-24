@@ -15,6 +15,9 @@ const swiper = new Swiper('.swiper', {
     clickable: true,
   },
   autoplay: true,
+  a11y: {
+    paginationBulletMessage: 'Следующий слайд'
+  },
 });
 
 new Accordion('.accordion-container');

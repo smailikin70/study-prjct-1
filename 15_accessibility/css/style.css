@@ -35,9 +35,13 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 0;
 }
 
-a:focus, button:focus{
-  outline: 1px #FF9900 solid;
-  outline-offset: 10px;
+a:focus{
+  outline: 2px #FF9900 solid;
+}
+
+*:focus{
+  outline: none;
+  border: none;
 }
 
 /*///////////////////////////*/
@@ -299,6 +303,11 @@ body {
     width: 15px;
     height: 15px;
     background-color: white;
+}
+
+.swiper-pagination-bullet:focus{
+  outline: 2px #FF9900 solid;
+  outline-offset: 5px;
 }
 
 .swiper-pagination-bullet-active {
@@ -623,6 +632,7 @@ body {
     border-left: none;
 }
 
+
 .ac .ac-trigger{
     padding: 0;
     margin: 0;
@@ -662,6 +672,14 @@ body {
     font-size: 16px;
     line-height: 32px;
     color: #000000;
+}
+
+
+.ac:focus-within{
+  outline: none;
+  border-top: 1px #FF9900 solid;
+  border-bottom: 1px #FF9900 solid;
+
 }
 /*-------------------------*/
 
@@ -734,7 +752,6 @@ body {
 
 .social__link:focus .social__svg {
     fill: #7C7C7C;
-    outline: 2px #FF9900 solid;
 }
 
 .social__link:active .social__svg {
